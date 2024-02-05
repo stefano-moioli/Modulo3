@@ -1,74 +1,145 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Agenzia Viaggi</title>
     <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css">
 </head>
+
 <body>
     <nav class="container-fluid bg-primary p-3 border-bottom text-white">
         <div class="row">
-            <div class="col-6 col-md-6">
-                logo
+            <div class="col-6 col-md-4">
+                <svg class="logoAgency" xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 64 64" viewBox="0 0 64 64"
+                    id="travel-booking">
+                    <path d="M58.48,46.38c-0.27,0-0.49-0.22-0.49-0.49V15.21c0-1.81-1.44-3.29-3.22-3.29H9.22c-1.79,0-3.24,1.48-3.24,3.29v30.68
+                    c0,0.27-0.22,0.49-0.49,0.49S5,46.16,5,45.89V15.21c0-2.36,1.9-4.27,4.22-4.27h45.55c2.32,0,4.2,1.92,4.2,4.27v30.68
+                    C58.98,46.16,58.76,46.38,58.48,46.38z"></path>
+                    <path
+                        d="M55.53 43.21H8.47c-.27 0-.49-.22-.49-.49V14.62c0-.27.22-.49.49-.49h47.06c.27 0 .49.22.49.49v28.09C56.02 42.98 55.8 43.21 55.53 43.21zM8.96 42.22h46.08V15.11H8.96V42.22zM56.82 53.06H7.17c-1.93 0-3.73-.75-5.07-2.11C.75 49.62 0 47.82 0 45.89c0-.27.22-.49.49-.49h63.02c.27 0 .49.22.49.49C64 49.85 60.78 53.06 56.82 53.06zM1 46.38c.11 1.47.74 2.84 1.79 3.88 1.16 1.17 2.71 1.82 4.37 1.82h49.65c3.25 0 5.93-2.51 6.18-5.69H1z">
+                    </path>
+                    <path
+                        d="M43.08 40.74H20.92c-.44 0-.8-.36-.8-.8v-3.81c0-.44.36-.8.8-.8h22.16c.44 0 .8.36.8.8v3.81C43.88 40.38 43.52 40.74 43.08 40.74zM21.11 39.76h21.78v-3.43H21.11V39.76zM52.52 31.13h-21.7c-.72 0-1.31-.59-1.31-1.31V16.99c0-.72.59-1.31 1.31-1.31h21.7c.72 0 1.31.59 1.31 1.31v12.83C53.83 30.54 53.24 31.13 52.52 31.13zM30.81 16.67c-.18 0-.32.15-.32.32v12.83c0 .18.15.32.32.32h21.7c.18 0 .32-.15.32-.32V16.99c0-.18-.15-.32-.32-.32H30.81z">
+                    </path>
+                    <path
+                        d="M40.54 22.61c-.11 0-.21-.03-.3-.1l-3.72-2.89c-.28-.25-.42-.57-.42-.9 0-.26.09-.51.25-.72.32-.42.87-.58 1.36-.4l6.16 2.35c.25.1.38.38.28.64-.1.25-.38.38-.63.28l-6.15-2.34c-.08-.03-.18 0-.23.07-.03.04-.05.08-.05.12 0 .05.02.11.07.15l3.69 2.86c.21.17.25.48.09.69C40.83 22.55 40.69 22.61 40.54 22.61zM33.54 26.02c-.11 0-.22-.04-.3-.12l-2.2-2.2c-.19-.19-.3-.45-.3-.72 0-.22.06-.42.18-.59.28-.38.75-.53 1.19-.37l4.5 1.65c.22.08.33.32.25.54-.08.22-.32.33-.54.25l-4.5-1.64c-.08-.03-.17 0-.22.07-.02.03-.03.06-.03.1 0 .05.02.09.05.13l2.2 2.2c.16.16.16.43 0 .6C33.75 25.98 33.64 26.02 33.54 26.02z">
+                    </path>
+                    <path
+                        d="M36.28,28.05c-0.13,0-0.27-0.01-0.41-0.02l-1.64-0.09c-0.38-0.02-0.73-0.08-1.06-0.17c-0.61-0.28-0.9-0.62-0.93-1.03
+                            c-0.05-0.62,0.54-1.04,0.61-1.09l0.42-0.21c0.02-0.01,0.04-0.02,0.05-0.02l0.09-0.04l3.27-1.74
+                            c0.02-0.01,0.04-0.02,0.06-0.03l7.47-4.04c0.02-0.01,1.14-0.73,2.7-0.92l1.12-0.19c0.7-0.15,1.61-0.29,2.35-0.1
+                            c0.34,0.08,0.63,0.23,0.84,0.43c0,0,0,0,0,0c0.01,0,0.14,0.1,0.28,0.26c0.15,0.19,0.26,0.38,0.32,0.57
+                            c0.01,0.02,0.01,0.04,0.01,0.06c0.07,0.24,0.05,0.49-0.04,0.75c-0.12,0.29-0.3,0.53-0.56,0.75l-0.21,0.18
+                            c-1.06,0.92-2.17,1.7-3.28,2.33l-2.02,1.08c-0.24,0.13-0.54,0.04-0.67-0.2c-0.13-0.24-0.04-0.54,0.2-0.67l2-1.07
+                            c1.05-0.59,2.1-1.34,3.12-2.22l0.22-0.19c0.14-0.11,0.22-0.23,0.27-0.35c0.03-0.08,0.02-0.11,0.01-0.14
+                            c0-0.02-0.01-0.03-0.01-0.05c-0.03-0.07-0.07-0.14-0.12-0.2c-0.06-0.07-0.13-0.12-0.13-0.12c-0.15-0.13-0.29-0.2-0.46-0.24
+                            c-0.56-0.14-1.32-0.01-1.92,0.11l-1.18,0.2c-1.35,0.16-2.32,0.78-2.33,0.79l-7.57,4.09c-0.02,0.01-0.04,0.02-0.06,0.03
+                            l-3.38,1.79c-0.02,0.01-0.04,0.02-0.06,0.03l-0.31,0.15c-0.02,0.02-0.11,0.12-0.12,0.17l0,0c0.01,0,0.07,0.08,0.29,0.18
+                            c0.19,0.05,0.47,0.09,0.78,0.11l1.61,0.09c0.3,0.02,0.55,0.02,0.8-0.01c0.69-0.04,1.5-0.19,2.41-0.44
+                            c1.39-0.37,2.8-0.94,4.21-1.68l0.46-0.24c0.24-0.13,0.54-0.04,0.67,0.2c0.13,0.24,0.04,0.54-0.2,0.67l-0.46,0.24
+                            c-1.47,0.78-2.96,1.37-4.41,1.76c-0.99,0.27-1.84,0.43-2.59,0.47C36.62,28.04,36.45,28.05,36.28,28.05z">
+                    </path>
+                    <path
+                        d="M36.28 28.05c-.13 0-.27-.01-.4-.02-.27-.02-.48-.26-.45-.53.02-.27.26-.47.53-.45.25.02.51.02.75-.01.27-.03.51.17.54.44.03.27-.17.51-.44.54C36.63 28.04 36.45 28.05 36.28 28.05zM44.74 26.02c-.36 0-.71-.14-.97-.42-.24-.26-.37-.6-.36-.96.01-.36.16-.69.42-.93.54-.5 1.38-.47 1.89.06v0c.5.54.47 1.38-.06 1.89C45.39 25.91 45.06 26.02 44.74 26.02zM44.74 24.34c-.09 0-.17.03-.24.09-.07.06-.11.15-.11.24 0 .09.03.18.09.25.13.14.35.15.5.02.14-.13.15-.35.02-.49l0 0C44.92 24.38 44.83 24.34 44.74 24.34zM48.56 20.1c-.6 0-1.08-.35-1.38-.77-.16-.22-.1-.53.12-.69.22-.16.53-.1.69.12.39.55.82.32.96.25l1.1-.6c.23-.13.54-.04.67.2.13.24.04.54-.2.67l-.83.45c-.17.09-.28.16-.3.16C49.1 20.04 48.82 20.1 48.56 20.1z">
+                    </path>
+                    <g>
+                        <path d="M24.18,20.97H11.52c-0.27,0-0.49-0.22-0.49-0.49c0-0.27,0.22-0.49,0.49-0.49h12.66c0.27,0,0.49,0.22,0.49,0.49
+        C24.67,20.75,24.45,20.97,24.18,20.97z"></path>
+                    </g>
+                    <g>
+                        <path d="M24.18,26.45H11.52c-0.27,0-0.49-0.22-0.49-0.49s0.22-0.49,0.49-0.49h12.66c0.27,0,0.49,0.22,0.49,0.49
+        S24.45,26.45,24.18,26.45z"></path>
+                    </g>
+                    <g>
+                        <path d="M24.18,31.94H11.52c-0.27,0-0.49-0.22-0.49-0.49c0-0.27,0.22-0.49,0.49-0.49h12.66c0.27,0,0.49,0.22,0.49,0.49
+        C24.67,31.72,24.45,31.94,24.18,31.94z"></path>
+                    </g>
+                </svg>
             </div>
 
             <div class="col-6 d-sm-block d-md-none">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="14" viewBox="0 0 20 14" id="menu"><g fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"><g stroke="#000" stroke-width="2" transform="translate(-1629 -1753)"><g transform="translate(1630 1754)"><path d="M0 6h18M0 0h18M0 12h18"></path></g></g></g></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="14" viewBox="0 0 20 14" id="menu">
+                    <g fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+                        <g stroke="#000" stroke-width="2" transform="translate(-1629 -1753)">
+                            <g transform="translate(1630 1754)">
+                                <path d="M0 6h18M0 0h18M0 12h18"></path>
+                            </g>
+                        </g>
+                    </g>
+                </svg>
             </div>
 
-        <div class="d-none d-md-block col-md-6">
-           <a href="#">Weekly Offers</a>
-           <a href="#">Welcome Summer</a>
-           <a href="#">Daily Offer</a>
+            <div class="d-none d-md-block col-md-8">
+                <ul class="d-flex">
+                    <li>Weekly Offers</li>
+                    <li>Welcome Summer</a></li>
+                    <li>Daily Offer</li>
+                    <li>Last Minute</li>
+                    <li>Testimonial</li>
+                </ul>
+            </div>
+
+
+
         </div>
-
-
-
-    </div>
     </nav>
 
     <div class="container mt-5">
-    <div class="jumbotron">
-        <h1 class="display-4">Agenzia Viaggi</h1>
-        <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
-        <hr class="my-4">
-        <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
-        <p class="lead">
-          <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
-        </p>
-      </div>
+        <div class="jumbotron">
+            <h1 class="display-4">Agenzia Viaggi</h1>
+            <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention
+                to featured content or information.</p>
+            <hr class="my-4">
+            <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+            <p class="lead">
+                <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+            </p>
+        </div>
     </div>
 
     <h4 class="text-center mt-5">Weekly Offers</h4>
     <div class="container mt-4">
         <div class="row">
-            <div class="col 6 border black col-md 4"><img class="h-100 w-100" src="./assets/isolaTropicale.jpg" alt="Tropical Island"></div>
-            <div class="col 6  border black col-md 4"><img class="h-100 w-100" src="./assets/montagna.jpg" alt="Mountain"></div>
-            <div class="d-none d-md-block col-md 4 border black">card3</div>
-            <div class="d-none d-lg-block col-lg 3 border black">card4</div>
+            <div class="col 6 col-md 4"><img class="h-100 w-100 rounded" src="./assets/isolaTropicale.jpg"
+                    alt="Tropical Island"></div>
+            <div class="col 6 col-md 4"><img class="h-100 w-100 rounded" src="./assets/montagna.jpg"
+                    alt="Mountain"></div>
+            <div class="d-none d-md-block col-md 4"><img class="h-100 w-100 rounded" src="./assets/isolaTropicale.jpg"
+                alt="Tropical Island"></div>
+            <div class="d-none d-lg-block col-lg 3"><img class="h-100 w-100 rounded" src="./assets/montagna.jpg"
+                alt="Mountain"></div>
         </div>
     </div>
 
     <h4 class="text-center mt-5">Welcome Summer</h4>
     <div class="container mt-4">
         <div class="row">
-            <div class="col 6 border black col-md 4"><img class="h-100 w-100" src="./assets/isolaTropicale.jpg" alt="Tropical Island"></div>
-            <div class="col 6  border black col-md 4"><img class="h-100 w-100" src="./assets/montagna.jpg" alt="Mountain"></div>
-            <div class="col 6 border black col-md 4"><img class="h-100 w-100" src="./assets/isolaTropicale.jpg" alt="Tropical Island"></div>
-            <div class="col 6  border black col-md 4"><img class="h-100 w-100" src="./assets/montagna.jpg" alt="Mountain"></div>
-            <div class="d-none d-lg-block col-lg 2 border black">card5</div>
-            <div class="d-none d-lg-block col-lg 2 border black">card6</div>
+            <div class="col 6 col-md 4"><img class="h-100 w-100 rounded" src="./assets/isolaTropicale.jpg"
+                    alt="Tropical Island"></div>
+            <div class="col 6 col-md 4"><img class="h-100 w-100 rounded" src="./assets/montagna.jpg"
+                    alt="Mountain"></div>
+            <div class="col 6 col-md 4"><img class="h-100 w-100 rounded" src="./assets/isolaTropicale.jpg"
+                    alt="Tropical Island"></div>
+            <div class="col 6 col-md 4"><img class="h-100 w-100 rounded" src="./assets/montagna.jpg"
+                    alt="Mountain"></div>
+            <div class="d-none d-lg-block col-lg 2"><img class="h-100 w-100 rounded" src="./assets/isolaTropicale.jpg"
+                alt="Tropical Island"></div>
+            <div class="d-none d-lg-block col-lg 2"><img class="h-100 w-100 rounded" src="./assets/montagna.jpg"
+                alt="Mountain"></div>
         </div>
     </div>
 
-    <h4 class="text-center mt-5">Daily Offer</h4>
 
     <div class="container d-none d-md-block">
+        <h4 class="text-center mt-5">Daily Offer</h4>
         <div class="row">
-            <div class="col 6 border black col-md 4"><img class="h-100 w-100" src="./assets/isolaTropicale.jpg" alt="Tropical Island"></div>
+            <div class="col 6 col-md 4"><img class="h-100 w-100 rounded" src="./assets/isolaTropicale.jpg"
+                    alt="Tropical Island"></div>
             <div class="col-md-4">Tropical Island
                 Price: 60 euro
                 Luxury Hotel in Basil
@@ -76,14 +147,21 @@
         </div>
     </div>
 
-    <footer class="container-fluid mt-5">
+    <footer class="container-fluid mt-5 bg-primary p-3">
         <div class="row">
             <div class="col">Agenzia Balocchi</div>
         </div>
     </footer>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>

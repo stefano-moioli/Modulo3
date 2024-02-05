@@ -7,10 +7,21 @@ a{
     color: white;
 }
 
-a:hover{
+ul{
+    list-style: none;
+    gap: 20px;
+}
+
+li:hover{
     cursor: pointer;
 }
 
 .logoImg{
 
+}
+
+.logoAgency{
+    width: 30px;
+    height: 30px;
+    color: white;
 }
