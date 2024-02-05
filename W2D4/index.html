@@ -4,39 +4,83 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Agenzia Viaggi</title>
+    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <nav class="container-fluid bg-black p-3">
+    <nav class="container-fluid bg-primary p-3 border-bottom text-white">
         <div class="row">
-            <div class="col text-white">
+            <div class="col-6 col-md-6">
                 logo
             </div>
 
-        <div class="col d-none d-md-block">
-           <a href="#">viaggi</a>
-           <a href="#">viaggi</a>
-           <a href="#">viaggi</a>
+            <div class="col-6 d-sm-block d-md-none">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="14" viewBox="0 0 20 14" id="menu"><g fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"><g stroke="#000" stroke-width="2" transform="translate(-1629 -1753)"><g transform="translate(1630 1754)"><path d="M0 6h18M0 0h18M0 12h18"></path></g></g></g></svg>
+            </div>
+
+        <div class="d-none d-md-block col-md-6">
+           <a href="#">Weekly Offers</a>
+           <a href="#">Welcome Summer</a>
+           <a href="#">Daily Offer</a>
         </div>
 
-        <div class="col d-none d-md-block">
-           <a href="#">viaggi</a>
-           <a href="#">viaggi</a>
-           <a href="#">viaggi</a>
-        </div>
+
 
     </div>
-
     </nav>
 
     <div class="container mt-5">
+    <div class="jumbotron">
+        <h1 class="display-4">Agenzia Viaggi</h1>
+        <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+        <hr class="my-4">
+        <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+        <p class="lead">
+          <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+        </p>
+      </div>
+    </div>
+
+    <h4 class="text-center mt-5">Weekly Offers</h4>
+    <div class="container mt-4">
         <div class="row">
-            <div class="col 6 border black col-md 4">card1</div>
-            <div class="col 6  border black col-md 4">card2</div>
-            <div class="d-none d-md-block col-md 4 border black ">card3</div>
+            <div class="col 6 border black col-md 4"><img class="h-100 w-100" src="./assets/isolaTropicale.jpg" alt="Tropical Island"></div>
+            <div class="col 6  border black col-md 4"><img class="h-100 w-100" src="./assets/montagna.jpg" alt="Mountain"></div>
+            <div class="d-none d-md-block col-md 4 border black">card3</div>
             <div class="d-none d-lg-block col-lg 3 border black">card4</div>
         </div>
     </div>
+
+    <h4 class="text-center mt-5">Welcome Summer</h4>
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col 6 border black col-md 4"><img class="h-100 w-100" src="./assets/isolaTropicale.jpg" alt="Tropical Island"></div>
+            <div class="col 6  border black col-md 4"><img class="h-100 w-100" src="./assets/montagna.jpg" alt="Mountain"></div>
+            <div class="col 6 border black col-md 4"><img class="h-100 w-100" src="./assets/isolaTropicale.jpg" alt="Tropical Island"></div>
+            <div class="col 6  border black col-md 4"><img class="h-100 w-100" src="./assets/montagna.jpg" alt="Mountain"></div>
+            <div class="d-none d-lg-block col-lg 2 border black">card5</div>
+            <div class="d-none d-lg-block col-lg 2 border black">card6</div>
+        </div>
+    </div>
+
+    <h4 class="text-center mt-5">Daily Offer</h4>
+
+    <div class="container d-none d-md-block">
+        <div class="row">
+            <div class="col 6 border black col-md 4"><img class="h-100 w-100" src="./assets/isolaTropicale.jpg" alt="Tropical Island"></div>
+            <div class="col-md-4">Tropical Island
+                Price: 60 euro
+                Luxury Hotel in Basil
+            </div>
+        </div>
+    </div>
+
+    <footer class="container-fluid mt-5">
+        <div class="row">
+            <div class="col">Agenzia Balocchi</div>
+        </div>
+    </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
