@@ -1,19 +1,23 @@
-.logoNav{
+.logoNav {
     height: 40px;
     width: auto;
 }
 
-body{
+body {
     background-color: rgb(23, 23, 23);
     color: white;
 }
 
-a{
+a {
     color: white;
 }
 
-.dropdownBg{
-background-color: rgb(23, 23, 23) !important;
+.dropdownBg {
+    background-color: rgb(23, 23, 23) !important;
 }
 
-
+.moviesContainer img{
+    width: 200px !important;
+    height: 150px;
+    object-fit: cover;
+}
