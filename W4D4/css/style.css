@@ -17,7 +17,7 @@ a {
 }
 
 .moviesContainer img{
-    width: 200px !important;
+    width: 220px !important;
     height: 150px;
     object-fit: cover;
 }
